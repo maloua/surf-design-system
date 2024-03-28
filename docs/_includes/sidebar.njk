@@ -1,5 +1,5 @@
 <ul>
-  <li>
+  {# <li>
     <h2>Getting Started</h2>
     <ul>
       <li><a href="/">Home</a></li>
@@ -10,16 +10,8 @@
       <li><a href="/getting-started/form-controls">Form Controls</a></li>
       <li><a href="/getting-started/localization">Localization</a></li>
     </ul>
-  </li>
-  <li>
-    <h2>Frameworks</h2>
-    <ul>
-      <li><a href="/frameworks/react">React</a></li>
-      <li><a href="/frameworks/vue">Vue</a></li>
-      <li><a href="/frameworks/angular">Angular</a></li>
-    </ul>
-  </li>
-  <li>
+  </li> #}
+  {# <li>
     <h2>Resources</h2>
     <ul>
       <li><a href="/resources/community">Community</a></li>
@@ -28,19 +20,7 @@
       <li><a href="/resources/contributing">Contributing</a></li>
       <li><a href="/resources/changelog">Changelog</a></li>
     </ul>
-  </li>
-  <li>
-    <h2>Components</h2>
-    <ul>
-      {% for component in meta.components %}
-        <li>
-          <a href="/components/{{ component.tagName | removeSlPrefix }}">
-            {{ component.name | classNameToComponentName }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-  </li>
+  </li> #}
   <li>
     <h2>Design Tokens</h2>
     <ul>
@@ -55,11 +35,43 @@
     </ul>
   </li>
   <li>
+    <h2>SURF components</h2>
+    <ul>
+      {% for component in ['alert', 'tab-group', 'breadcrumb', 'dropdown', 'button', 'input', 'textarea', 'select', 'checkbox', 'radio-group', 'switch', 'icon', 'badge', 'card', 'tooltip', 'avatar', 'details', 'dialog'] %}
+        <li>
+          <a href="/components/{{ component }}">
+            {{ component | classNameToComponentName }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </li>
+  <li>
+    <h2>All components</h2>
+    <ul>
+      {% for component in meta.components %}
+        <li>
+          <a href="/components/{{ component.tagName | removeSlPrefix }}">
+            {{ component.name | classNameToComponentName }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </li>
+  {# <li>
+    <h2>Frameworks</h2>
+    <ul>
+      <li><a href="/frameworks/react">React</a></li>
+      <li><a href="/frameworks/vue">Vue</a></li>
+      <li><a href="/frameworks/angular">Angular</a></li>
+    </ul>
+  </li> #}
+  {# <li>
     <h2>Tutorials</h2>
     <ul>
       <li><a href="/tutorials/integrating-with-laravel">Integrating with Laravel</a></li>
       <li><a href="/tutorials/integrating-with-nextjs">Integrating with NextJS</a></li>
       <li><a href="/tutorials/integrating-with-rails">Integrating with Rails</a></li>
     </ul>
-  </li>
+  </li> #}
 </ul>
