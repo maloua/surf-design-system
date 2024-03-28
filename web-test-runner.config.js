@@ -33,6 +33,7 @@ export default {
       <head></head>
       <body>
         <link rel="stylesheet" href="dist/themes/light.css">
+        <link rel="stylesheet" href="dist/themes/surf.css">
         <script>
           window.process = {env: { NODE_ENV: "production" }}
         </script>
