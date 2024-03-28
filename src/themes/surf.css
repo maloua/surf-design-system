@@ -1,0 +1,83 @@
+:root,
+:host {
+  /*
+   * Color Primitives
+   */
+
+  /* White */
+  --surf-color-white: rgb(255, 255, 255);
+
+  /* Black */
+  --surf-color-black: rgb(5, 14, 29);
+
+  /* Gray */
+  --surf-color-gray-100: #f4f6f8;
+  --surf-color-gray-200: #eaecf0;
+  --surf-color-gray-300: #b2b6be;
+  --surf-color-gray-400: #5e6873;
+  --surf-color-gray-500: #050e1d;
+
+  /* Blue */
+  --surf-color-blue-100: #dff4ff;
+  --surf-color-blue-200: #b3e5ff;
+  --surf-color-blue-300: #78befd;
+  --surf-color-blue-400: #0077c8;
+  --surf-color-blue-500: #004c97;
+
+  /* Green */
+  --surf-color-green-100: #dcf2e5;
+  --surf-color-green-200: #b8e3c9;
+  --surf-color-green-300: #17a95d;
+  --surf-color-green-400: #008939;
+  --surf-color-green-500: #006731;
+
+  /* Orange */
+  --surf-color-orange-100: #ffe6d2;
+  --surf-color-orange-200: #ffc294;
+  --surf-color-orange-300: #ff9a4e;
+  --surf-color-orange-400: #e67300;
+  --surf-color-orange-500: #c15500;
+
+  /* 
+   * Color Variants matching Shoelace (SURF: alerts)
+   */
+
+  /* Primary (SURF: based on theme. Neutral theme as default) */
+  --surf-color-primary-100: var(--surf-color-gray-100);
+  --surf-color-primary-200: var(--surf-color-gray-200);
+  --surf-color-primary-300: var(--surf-color-gray-300);
+  --surf-color-primary-400: var(--surf-color-gray-400);
+  --surf-color-primary-500: var(--surf-color-gray-500);
+
+  /* Information (SURF: information - doesn't exist in Shoelace) */
+  --surf-color-information-100: rgb(179, 229, 255);
+  --surf-color-information-300: rgb(0, 119, 200);
+
+  /* Success (SURF: success) */
+  --surf-color-success-100: rgb(184, 227, 201);
+  --surf-color-success-300: rgb(0, 137, 57);
+
+  /* Warning (SURF: warning)*/
+  --surf-color-warning-100: rgb(254, 248, 211);
+  --surf-color-warning-300: rgb(255, 193, 0);
+
+  /* Danger (SURF: alert) */
+  --surf-color-danger-100: rgb(255, 205, 202);
+  --surf-color-danger-300: rgb(218, 54, 45);
+  --surf-color-danger-500: rgb(131, 32, 27);
+
+  /* Neutral (SURF: default) */
+  --surf-color-neutral-100: rgb(94, 104, 155);
+  --surf-color-neutral-300: rgb(5, 14, 29);
+
+  /* 
+   * Color Variants not in Shoelace
+   */
+
+  /* Secondary (SURF: based on theme. Neutral theme as default) */
+  --surf-color-secondary-100: var(--surf-color-green-100);
+  --surf-color-secondary-200: var(--surf-color-green-200);
+  --surf-color-secondary-300: var(--surf-color-green-300);
+  --surf-color-secondary-400: var(--surf-color-green-400);
+  --surf-color-secondary-500: var(--surf-color-green-500);
+}
