@@ -14,18 +14,13 @@ export default css`
     display: inline-block;
     color: var(--sl-input-label-color);
     margin-bottom: var(--sl-spacing-3x-small);
+    font-weight: var(--surf-input-label-font-weight);
   }
 
-  .form-control--has-label.form-control--small .form-control__label {
-    font-size: var(--sl-input-label-font-size-small);
-  }
-
-  .form-control--has-label.form-control--medium .form-control__label {
-    font-size: var(--sl-input-label-font-size-medium);
-  }
-
+  .form-control--has-label.form-control--small .form-control__label,
+  .form-control--has-label.form-control--medium .form-control__label,
   .form-control--has-label.form-control--large .form-control__label {
-    font-size: var(--sl-input-label-font-size-large);
+    font-size: var(--surf-input-label-font-size);
   }
 
   :host([required]) .form-control--has-label .form-control__label::after {

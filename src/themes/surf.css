@@ -87,4 +87,8 @@
   --surf-focus-ring-width: 3px;
   --surf-focus-ring: var(--surf-focus-ring-style) var(--surf-focus-ring-width) var(--surf-focus-ring-color);
   --surf-focus-ring-offset: 0px;
+
+  /* Input labels */
+  --surf-input-label-font-weight: 600;
+  --surf-input-label-font-size: var(--sl-font-size-medium);
 }

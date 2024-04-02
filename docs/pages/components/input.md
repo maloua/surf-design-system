@@ -126,11 +126,11 @@ const App = () => <SlInput placeholder="Disabled" disabled />;
 Use the `size` attribute to change an input's size.
 
 ```html:preview
-<sl-input placeholder="Small" size="small"></sl-input>
+<sl-input placeholder="Small" label="Small" size="small"></sl-input>
 <br />
-<sl-input placeholder="Medium" size="medium"></sl-input>
+<sl-input placeholder="Medium" label="Medium" size="medium"></sl-input>
 <br />
-<sl-input placeholder="Large" size="large"></sl-input>
+<sl-input placeholder="Large" label="Large" size="large"></sl-input>
 ```
 
 ```jsx:react
