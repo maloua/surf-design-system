@@ -51,4 +51,17 @@ export default css`
   .form-control--has-help-text.form-control--radio-group .form-control__help-text {
     margin-top: var(--sl-spacing-2x-small);
   }
+
+  /* Invalid */
+  sl-input[data-user-invalid]::part(base),
+  sl-select[data-user-invalid]::part(combobox),
+  sl-checkbox[data-user-invalid]::part(control) {
+    border-color: var(--surf-input-border-color-invalid);
+  }
+
+  [data-user-invalid]::part(form-control-label),
+  [data-user-invalid]::part(form-control-help-text),
+  sl-checkbox[data-user-invalid]::part(label) {
+    color: var(--surf-input-border-color-invalid);
+  }
 `;
