@@ -17,7 +17,7 @@ const App = () => <SlButton>Button</SlButton>;
 
 ## Examples
 
-### Variants
+### Color Variants
 
 Use the `variant` attribute to set the button's variant.
 
@@ -41,28 +41,6 @@ const App = () => (
     <SlButton variant="neutral">Neutral</SlButton>
     <SlButton variant="warning">Warning</SlButton>
     <SlButton variant="danger">Danger</SlButton>
-  </>
-);
-```
-
-### Sizes
-
-Use the `size` attribute to change a button's size.
-
-```html:preview
-<sl-button size="small">Small</sl-button>
-<sl-button size="medium">Medium</sl-button>
-<sl-button size="large">Large</sl-button>
-```
-
-```jsx:react
-import SlButton from '@shoelace-style/shoelace/dist/react/button';
-
-const App = () => (
-  <>
-    <SlButton size="small">Small</SlButton>
-    <SlButton size="medium">Medium</SlButton>
-    <SlButton size="large">Large</SlButton>
   </>
 );
 ```
@@ -103,6 +81,56 @@ const App = () => (
     <SlButton variant="danger" outline>
       Danger
     </SlButton>
+  </>
+);
+```
+
+### Text Buttons
+
+Use the `text` variant to create text buttons that share the same size as regular buttons but don't have backgrounds or borders.
+
+```html:preview
+<sl-button variant="text" size="small">Text</sl-button>
+<sl-button variant="text" size="medium">Text</sl-button>
+<sl-button variant="text" size="large">Text</sl-button>
+```
+
+```jsx:react
+import SlButton from '@shoelace-style/shoelace/dist/react/button';
+
+const App = () => (
+  <>
+    <SlButton variant="text" size="small">
+      Text
+    </SlButton>
+    <SlButton variant="text" size="medium">
+      Text
+    </SlButton>
+    <SlButton variant="text" size="large">
+      Text
+    </SlButton>
+  </>
+);
+```
+
+### Sizes
+
+Use the `size` attribute to change a button's size.
+
+```html:preview
+<sl-button size="small">Small</sl-button>
+<sl-button size="medium">Medium</sl-button>
+<sl-button size="large">Large</sl-button>
+```
+
+```jsx:react
+import SlButton from '@shoelace-style/shoelace/dist/react/button';
+
+const App = () => (
+  <>
+    <SlButton size="small">Small</SlButton>
+    <SlButton size="medium">Medium</SlButton>
+    <SlButton size="large">Large</SlButton>
   </>
 );
 ```
@@ -167,34 +195,6 @@ const App = () => (
     </SlButton>
     <SlButton variant="default" size="large" circle>
       <SlIcon name="gear" />
-    </SlButton>
-  </>
-);
-```
-
-### Text Buttons
-
-Use the `text` variant to create text buttons that share the same size as regular buttons but don't have backgrounds or borders.
-
-```html:preview
-<sl-button variant="text" size="small">Text</sl-button>
-<sl-button variant="text" size="medium">Text</sl-button>
-<sl-button variant="text" size="large">Text</sl-button>
-```
-
-```jsx:react
-import SlButton from '@shoelace-style/shoelace/dist/react/button';
-
-const App = () => (
-  <>
-    <SlButton variant="text" size="small">
-      Text
-    </SlButton>
-    <SlButton variant="text" size="medium">
-      Text
-    </SlButton>
-    <SlButton variant="text" size="large">
-      Text
     </SlButton>
   </>
 );
@@ -500,7 +500,7 @@ const App = () => (
 );
 ```
 
-### Styling Buttons
+<!-- ### Styling Buttons
 
 This example demonstrates how to style buttons using a custom class. This is the recommended approach if you need to add additional variations. To customize an existing variation, modify the selector to target the button's `variant` attribute instead of a class (e.g. `sl-button[variant="primary"]`).
 
@@ -542,4 +542,4 @@ This example demonstrates how to style buttons using a custom class. This is the
     outline-offset: 4px;
   }
 </style>
-```
+``` -->
