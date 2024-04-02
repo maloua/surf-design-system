@@ -88,7 +88,15 @@
   --surf-focus-ring: var(--surf-focus-ring-style) var(--surf-focus-ring-width) var(--surf-focus-ring-color);
   --surf-focus-ring-offset: 0px;
 
-  /* Input labels */
+  /* Inputs */
+  --sl-input-background-color-disabled: var(--surf-color-gray-100);
+  --sl-input-border-color: var(--surf-color-gray-300);
+  --sl-input-border-color-hover: var(--surf-color-black);
+  --sl-input-border-color-focus: var(--surf-color-gray-300);
+  --sl-input-border-color-disabled: var(--surf-color-gray-100);
+  --surf-input-border-color-invalid: var(--surf-color-danger-300);
+
+  /* Labels */
   --surf-input-label-font-weight: 600;
   --surf-input-label-font-size: var(--sl-font-size-medium);
 }
