@@ -80,4 +80,11 @@
   --surf-color-secondary-300: var(--surf-color-green-300);
   --surf-color-secondary-400: var(--surf-color-green-400);
   --surf-color-secondary-500: var(--surf-color-green-500);
+
+  /* Focus rings */
+  --surf-focus-ring-color: var(--surf-color-blue-200);
+  --surf-focus-ring-style: solid;
+  --surf-focus-ring-width: 3px;
+  --surf-focus-ring: var(--surf-focus-ring-style) var(--surf-focus-ring-width) var(--surf-focus-ring-color);
+  --surf-focus-ring-offset: 0px;
 }

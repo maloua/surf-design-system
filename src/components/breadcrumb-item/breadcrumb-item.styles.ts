@@ -10,8 +10,8 @@ export default css`
     align-items: center;
     font-family: var(--sl-font-sans);
     font-size: var(--sl-font-size-small);
-    font-weight: var(--sl-font-weight-semibold);
-    color: var(--sl-color-neutral-600);
+    font-weight: var(--sl-font-weight-normal);
+    color: var(--surf-color-gray-500);
     line-height: var(--sl-line-height-normal);
     white-space: nowrap;
   }
@@ -33,16 +33,20 @@ export default css`
     transition: var(--sl-transition-fast) --color;
   }
 
+  :host(:last-of-type) .breadcrumb-item__label {
+    font-weight: var(--sl-font-weight-bold);
+  }
+
   :host(:not(:last-of-type)) .breadcrumb-item__label {
-    color: var(--sl-color-primary-600);
+    color: var(--surf-color-gray-500);
   }
 
   :host(:not(:last-of-type)) .breadcrumb-item__label:hover {
-    color: var(--sl-color-primary-500);
+    text-decoration: underline;
   }
 
   :host(:not(:last-of-type)) .breadcrumb-item__label:active {
-    color: var(--sl-color-primary-600);
+    color: var(--surf-color-gray-500);
   }
 
   .breadcrumb-item__label:focus {
@@ -50,8 +54,8 @@ export default css`
   }
 
   .breadcrumb-item__label:focus-visible {
-    outline: var(--sl-focus-ring);
-    outline-offset: var(--sl-focus-ring-offset);
+    outline: var(--surf-focus-ring);
+    outline-offset: var(--surf-focus-ring-offset);
   }
 
   .breadcrumb-item__prefix,
